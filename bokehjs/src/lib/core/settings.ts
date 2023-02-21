@@ -2,6 +2,7 @@ export class Settings {
   private _dev = false
   private _wireframe = false
   private _force_webgl = false
+  private _fast_tap = false
 
   set dev(dev: boolean) {
     this._dev = dev
@@ -25,6 +26,14 @@ export class Settings {
 
   get force_webgl(): boolean {
     return this._force_webgl
+  }
+
+  set fast_tap(fast_tap: boolean) {
+    this._fast_tap = fast_tap
+  }
+
+  get fast_tap(): boolean {
+    return this._fast_tap
   }
 }
 
