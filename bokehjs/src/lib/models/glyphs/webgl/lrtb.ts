@@ -7,10 +7,10 @@ import type {BlockView} from "../block"
 import type {HBarView} from "../hbar"
 import type {QuadView} from "../quad"
 import type {VBarView} from "../vbar"
-import type {HBandView} from "../hband"
-import type {VBandView} from "../vband"
+import type {HStripView} from "../hstrip"
+import type {VStripView} from "../vstrip"
 
-type AnyLRTBView = BlockView | HBarView | QuadView | VBarView | HBandView | VBandView
+type AnyLRTBView = BlockView | HBarView | QuadView | VBarView | HStripView | VStripView
 
 export class LRTBGL extends SingleMarkerGL {
   constructor(regl_wrapper: ReglWrapper, override readonly glyph: AnyLRTBView) {
